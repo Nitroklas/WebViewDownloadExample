@@ -1,10 +1,10 @@
-./WebViewExample/bin
-./WebViewExample/obj/
+WebViewExample/bin
+WebViewExample/obj/
 
-./WebViewExample.Android/bin/
-./WebViewExample.Android/obj/
+WebViewExample.Android/bin/
+WebViewExample.Android/obj/
 
-./WebViewExample.iOS/bin/
-./WebViewExample.iOS/obj/
+WebViewExample.iOS/bin/
+WebViewExample.iOS/obj/
 
 .vs/

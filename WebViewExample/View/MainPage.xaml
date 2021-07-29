@@ -36,7 +36,7 @@
                                                 android:WebView.EnableZoomControls="True"
                                                 android:WebView.MixedContentMode="AlwaysAllow">
             </customhybridwebview:HybridWebView>
-            <Button Text="Zurück"
+            <Button Text="Back"
                     TextColor="Red"
                     BackgroundColor="Black"
                     HorizontalOptions="CenterAndExpand"
