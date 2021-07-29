@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Mu9uJrAob5uQM0n16fTcqxHaFsT4B1Mpf1VPEWXoiM0bPEnv7Qt/GnQlnTZmka4U1iwUHA4nTUQ7onQQSEysA==",
+  "success": true,
+  "projectFilePath": "/Users/mac-entwicklung/Projects/WebViewExample/WebViewExample/WebViewExample.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac-entwicklung/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/mac-entwicklung/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/mac-entwicklung/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/mac-entwicklung/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/mac-entwicklung/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

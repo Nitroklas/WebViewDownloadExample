@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebViewExample.MainPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:customhybridwebview="clr-namespace:WebViewExample.View.Custom">
+
+    <ContentPage.Content>
+
+        <StackLayout 
+            BackgroundColor="#000"
+            Spacing="0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <ActivityIndicator x:Name="loadingIndicator"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Color="Red"
+                               BackgroundColor="Black">
+                <ActivityIndicator.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="60" Android="40"/>
+                </ActivityIndicator.HeightRequest>
+                <ActivityIndicator.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="60" Android="40"/>
+                </ActivityIndicator.WidthRequest>
+            </ActivityIndicator>
+            <customhybridwebview:HybridWebView  x:Name="hybridWebView"
+                                                Source="{Binding SourceUrl}"
+                                                HeightRequest="1000"
+                                                WidthRequest="1000"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand"
+                                                Navigating="HybridWebView_Navigating"
+                                                Navigated="HybridWebView_Navigated"  
+                                                android:WebView.DisplayZoomControls="False"
+                                                android:WebView.EnableZoomControls="True"
+                                                android:WebView.MixedContentMode="AlwaysAllow">
+            </customhybridwebview:HybridWebView>
+            <Button Text="Zurück"
+                    TextColor="Red"
+                    BackgroundColor="Black"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="ClickedWebViewGoBack"
+                    IsVisible="{Binding BackButtonIsVisible}"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
